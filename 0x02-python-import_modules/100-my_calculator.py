@@ -27,4 +27,3 @@ if __name__ == "__main__":
         exit(1)
 
     print(f'{a} {argv[2]} {b} = {result}')
-    
