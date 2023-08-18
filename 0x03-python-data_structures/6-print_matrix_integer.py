@@ -9,7 +9,13 @@ def print_matrix_integer(matrix=[[]]):
 
     """
 
-    for row in matrix:
-        for col in row:
-            print(col, end=" ")
+    if not matrix:
         print()
+    else:
+        for row in matrix:
+            for col in row:
+                if row.index(col) == len(row) - 1:
+                    print(col, end="")
+                else:
+                    print(col, end=" ")
+            print()
