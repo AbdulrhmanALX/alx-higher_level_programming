@@ -4,7 +4,7 @@ Writes in a text file.
 """
 import json
 
-def to_json_string(my_obj):
+def from_json_string(my_str):
     """Writes text in filename.
     Args:
         - filename: name of the file
