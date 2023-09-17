@@ -11,4 +11,5 @@ def load_from_json_file(filename):
         - text: string to write in the file
     Returns: number of characters written
     """
-    return json.load(filename)
+    with open(filename) as f:
+        return json.load(f)
