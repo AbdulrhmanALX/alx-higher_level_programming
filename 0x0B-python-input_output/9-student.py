@@ -1,32 +1,29 @@
 #!/usr/bin/python3
-"""_summary_
-
-Returns:
-    _type_: _description_
+"""Module 9-student.
+Creates a Student class.
 """
 
-import json
 
 class Student:
-    """_summary_
-    """    
-    
-    def __init__(self, first_name, last_name, age):
-        """_summary_
+    """Class that defines a student.
+    Public attributes:
+        - first_name
+        - last_name
+        - age
+    Public method to_json().
+    """
 
-        Args:
-            first_name (_type_): _description_
-            last_name (_type_): _description_
-            age (_type_): _description_
-        """        
+    def __init__(self, first_name, last_name, age):
+        """Initializes the Student instance."""
+
         self.first_name = first_name
         self.last_name = last_name
         self.age = age
-        
-    def to_json(self):
-        """_summary_
 
-        Returns:
-            _type_: _description_
-        """        
+    def to_json(self):
+        """Retrieves a dictionary representation
+        of a Student instance.
+        Returns: the dict representation of the instance.
+        """
+
         return self.__dict__
