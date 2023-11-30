@@ -27,7 +27,7 @@ class Rectangle:
         """        
         return self.__width
     
-    @sitter.width
+    @width.setter
     def width(self, value):
         """_summary_
         """        
@@ -45,7 +45,7 @@ class Rectangle:
         """        
         return self.__height
     
-    @sitter.height
+    @height.setter
     def height(self, value):
         """_summary_
         """        
