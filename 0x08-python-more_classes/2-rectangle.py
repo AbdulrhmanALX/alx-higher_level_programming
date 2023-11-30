@@ -46,7 +46,7 @@ class Rectangle:
         return self.__height
     
     @sitter.height
-    def width(self, value):
+    def height(self, value):
         """_summary_
         """        
         if type(value) == int:
