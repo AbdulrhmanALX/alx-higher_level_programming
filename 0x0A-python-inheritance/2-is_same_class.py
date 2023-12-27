@@ -1,14 +1,18 @@
 #!/usr/bin/python3
-"""Module 1-my_list.
-Creates a class inheriting from the list class.
+"""Module 2-is_same_class.
+Finds if an object is exactly an instance of a class.
 """
 
 
 def is_same_class(obj, a_class):
-    """_summary_
+    """Function to determine if obj is an instance of a_class.
 
     Args:
-        obj (_type_): _description_
-        a_class (_type_): _description_
+        - obj: object to look at
+        - a_class: class to verify the instance of
+
+    Returns: True if obj is an instance of a_class,
+    False otherwise
     """
-    return isinstance(obj, a_class)   
+
+    return True if type(obj) is a_class else False
