@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """_summary_
 """
-imprt json
+import json
 def from_json_string(my_str):
     """_summary_
 
